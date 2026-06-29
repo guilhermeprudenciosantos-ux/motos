@@ -3,20 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lugnica Blog - Tudo sobre Re:Zero</title>
+    <style>
+        /* Configurações Gerais */
+        body {
+            background-color: #121214;
+            color: #e1e1e6;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabeçalho do Blog */
+        header {
+            background-color: #202024;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 3px solid #4a148c;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #a855f7; /* Roxo característico */
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+            color: #8d8d99;
+            font-style: italic;
+        }
+
+        /* Layout em Colunas (Container Principal) */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Área dos Posts (Coluna Esquerda) */
+        main {
+            flex: 3;
+            min-width: 300px;
+        }
+
+        .post {
+            background-color: #202024;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .post h2 {
+            color: #e43f5a; /* Vermelho de destaque */
+            margin-top: 0;
+        }
+
+        .post-meta {
+            font-size: 0.85rem;
+            color: #8d8d99;
+            margin-bottom: 15px;
+        }
+
+        .post img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .post p {
+            line-height: 1.6;
+            color: #c4c4cc;
+        }
+
+        /* Barra Lateral (Coluna Direita) */
+        aside {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .sidebar-box {
+            background-color: #202024;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .sidebar-box h3 {
+            color: #a855f7;
+            margin-top: 0;
+            border-bottom: 2px solid #4a148c;
+            padding-bottom: 5px;
+        }
+
+        .sidebar-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-box ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar-box ul li a {
+            color: #c4c4cc;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .sidebar-box ul li a:hover {
+            color: #e43f5a;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #202024;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #8d8d99;
+            border-top: 1px solid #29292e;
+        }
+    </style>
 </head>
-<style>body{
-    background-color: pink;
-    text-align: center;
-}</style>
-<style>main{
-    background-color: purple;
-}</style>
 <body>
-    <text-align: center >
-    <h1>Motos Blog</h1>
-    <p>Nesse blog eu falarei sobre algumas motos que eu particularmente acho legais</p>
-    <img src="./imagem-logo.png" alt="">
-    
+
+    <header>
+        <h1>Lugnica Blog</h1>
+        <p>Seu portal de teorias, personagens e novidades sobre Re:Zero</p>
+    </header>
+
+    <div class="container">
+        
+        <main>
+            <article class="post">
+                <h2>O Mistério do Retorno Através da Morte</h2>
+                <div class="post-meta">Postado em 29 de Junho de 2026 por NatsukiSubaru</div>
+                <img src="https://images.alphacoders.com/715/715502.jpg" alt="Subaru Re:Zero">
+                <p>O Retorno Através da Morte é a habilidade que move toda a engrenagem de Re:Zero. Concedida pela Bruxa da Inveja, Satella, essa habilidade permite que Subaru volte no tempo para um "ponto de salvamento" toda vez que ele morre. Mas qual é o preço real que ele está pagando?</p>
+            </article>
+
+            <article class="post">
+                <h2>Por que a Rem é uma das personagens mais amadas?</h2>
+                <div class="post-meta">Postado em 28 de Junho de 2026 por RemFan01</div>
+                <p>Desde o famoso episódio 18 da primeira temporada, a empregada de cabelos azuis conquistou o coração de milhares de fãs ao redor do mundo. Sua lealdade incondicional e evolução na história a tornaram um ícone dos animes modernos.</p>
+            </article>
+        </main>
+
+        <aside>
+            <div class="sidebar-box">
+                <h3>Sobre o Blog</h3>
+                <p>Um espaço feito de fã para fã para discutir o universo criado por Tappei Nagatsuki.</p>
+            </div>
+
+            <div class="sidebar-box">
+                <h3>Postagens Populares</h3>
+                <ul>
+                    <li><a href="#">Quem é a Bruxa da Inveja?</a></li>
+                    <li><a href="#">Guia de Episódios: Temporada 3</a></li>
+                    <li><a href="#">Análise do arco do Santuário</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Lugnica Blog. Feito com HTML e CSS no VS Code.</p>
+    </footer>
+
 </body>
 </html>
